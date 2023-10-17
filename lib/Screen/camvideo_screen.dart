@@ -7,6 +7,6 @@ class CamScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Placeholder();
     //màn hình camera
-    //Khoan Biết Bơi đã truy cập
+    //lànnh commit
   }
 }
