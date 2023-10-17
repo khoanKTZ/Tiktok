@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tiktok_clone/Screen/sign_screen.dart';
 import 'package:tiktok_clone/widgets/BottomStyleLogin.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -110,7 +111,13 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => SignScreen()),
+                          );
+                        },
                         child: const Text(
                           "Sign up",
                           style: TextStyle(
