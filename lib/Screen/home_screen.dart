@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tiktok_clone/Screen/camvideo_screen.dart';
 import 'package:tiktok_clone/widgets/custom_icon.dart';
 import 'package:tiktok_clone/widgets/editpage.dart';
 
@@ -12,6 +13,12 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int pageIdx = 0;
 
+  void onCustomIconClicked() {
+    print('Click x3');
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => CamScreen()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,6 +27,11 @@ class _HomeScreenState extends State<HomeScreen> {
             setState(() {
               pageIdx = idx;
             });
+
+            // Bắt sự kiện click vào biểu tượng tùy chỉnh.
+            if (idx == 2) {
+              onCustomIconClicked();
+            }
           },
           type: BottomNavigationBarType.fixed,
           backgroundColor: Colors.black,

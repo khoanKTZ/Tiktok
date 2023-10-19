@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tiktok_clone/Screen/sign_email_screen.dart';
 
 class BottomStyleLogin extends StatelessWidget {
   BottomStyleLogin(
@@ -16,9 +17,11 @@ class BottomStyleLogin extends StatelessWidget {
       ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Ứng dụng đang được phát triển.')));
     } else {
-      if (nameButton == "Continue with Google") {
+      if (nameButton == "User phone/ email/ username") {
         ScaffoldMessenger.of(context)
-            .showSnackBar(SnackBar(content: Text('Ứng dụng đang khởi chạy.')));
+            .showSnackBar(SnackBar(content: Text('Đã nhấp.')));
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => SignEmail()));
       }
     }
   }
