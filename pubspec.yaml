@@ -41,6 +41,9 @@ dependencies:
   cloud_firestore: ^4.9.3
   firebase_database: ^10.2.7
   firebase_storage: ^11.2.8
+  get: ^4.6.6
+  camera: ^0.10.5+5
+  video_compress_plus: ^1.0.0
 
 
 dev_dependencies:
