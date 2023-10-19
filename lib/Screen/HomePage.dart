@@ -50,6 +50,7 @@ class _HomeSceneState extends State<HomePage> with TickerProviderStateMixin {
               width: MediaQuery.of(context).size.width - 100,
               child: TabBar(
                   controller: _tabController,
+
                   tabs: [
                     Tab(
                       text: "Friends",
