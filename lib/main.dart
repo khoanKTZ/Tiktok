@@ -2,20 +2,24 @@ import 'dart:io';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:tiktok_clone/Database/auth_database.dart';
 import 'package:tiktok_clone/Screen/login_screen.dart';
 import 'package:tiktok_clone/check_Connection_firebase/save_video.dart';
 import 'package:tiktok_clone/check_Connection_firebase/utils.dart';
-import 'package:tiktok_clone/firebase_options.dart';
 import 'package:video_player/video_player.dart';
 
-Future<void> main() async {
-  Get.put(AuthController());
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
+void main() {
+  FirebaseOptions options = const FirebaseOptions(
+    apiKey: 'AIzaSyDec9jFizbrTJFHBXImSRslKIpBhTGpPYg',
+    appId: '1:314737080085:web:fa743e14688eb9887f5b1c',
+    messagingSenderId: '314737080085',
+    projectId: 'tiktok-clone-35aeb',
+    authDomain: 'tiktok-clone-35aeb.firebaseapp.com',
+    databaseURL: 'https://tiktok-clone-35aeb-default-rtdb.firebaseio.com',
+    storageBucket: 'tiktok-clone-35aeb.appspot.com',
+    measurementId: 'G-KQ9SB6GDGZ',
   );
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp(options: options);
   runApp(const MyApp());
 }
 
@@ -32,7 +36,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const LoginScreen(),
+      home: LoginScreen(),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
       // home: CheckServer(),
       // home: const HomeScreen(),
