@@ -12,6 +12,7 @@ class CheckServer extends StatefulWidget {
 class _CheckServerState extends State<CheckServer> {
   bool isFirestoreConnected = false;
 
+
   @override
   void initState() {
     super.initState();

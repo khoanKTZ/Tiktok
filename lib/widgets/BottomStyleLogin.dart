@@ -12,6 +12,7 @@ class BottomStyleLogin extends StatelessWidget {
   bool checkButton;
   String icons;
 
+
   void checkcode(BuildContext context) {
     if (checkButton == false) {
       ScaffoldMessenger.of(context).showSnackBar(

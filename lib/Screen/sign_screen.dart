@@ -10,6 +10,7 @@ class SignScreen extends StatefulWidget {
   State<SignScreen> createState() => _SignScreenState();
 }
 
+
 class _SignScreenState extends State<SignScreen> {
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();

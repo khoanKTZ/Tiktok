@@ -34,6 +34,7 @@ class CamScreen extends StatelessWidget {
                 Icon(Icons.image),
                 Padding(
                   padding: EdgeInsets.all(7.0),
+
                   child: Text(
                     'Gallery',
                     style: TextStyle(fontSize: 20),

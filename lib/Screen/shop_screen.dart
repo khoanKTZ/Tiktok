@@ -8,3 +8,4 @@ class ShopScreen extends StatelessWidget {
     return const Placeholder();
   }
 }
+

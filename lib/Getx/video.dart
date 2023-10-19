@@ -13,6 +13,7 @@ class Video {
   String thumbnail;
   String profilePhoto;
 
+
   Video({
     required this.username,
     required this.uid,

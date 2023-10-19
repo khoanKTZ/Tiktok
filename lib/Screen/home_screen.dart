@@ -13,6 +13,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int pageIdx = 0;
 
+
   void onCustomIconClicked() {
     print('Click x3');
     Navigator.push(

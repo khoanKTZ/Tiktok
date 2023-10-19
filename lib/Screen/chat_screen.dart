@@ -12,6 +12,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   TextEditingController textController = TextEditingController();
 
+
   // Hàm để gửi tin nhắn
   void sendMessage() {
     String message = textController.text;

@@ -13,6 +13,7 @@ class AuthController extends GetxController {
   @override
   void onReady() {
     User? currentUser = firebaseAuth.currentUser;
+
     if (currentUser != null) {
       _user = Rx<User?>(currentUser);
     } else {

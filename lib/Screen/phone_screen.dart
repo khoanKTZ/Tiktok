@@ -12,6 +12,7 @@ class _PhoneScreenState extends State<PhoneScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+
         title: Text('Đây là trang phone'),
       ),
       body: Center(

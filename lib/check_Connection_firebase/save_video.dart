@@ -11,6 +11,7 @@ class StorageData {
     Reference ref = _store.ref().child('videos/${DateTime.now()}.mp4');
     await ref.putFile(File(videoURL));
     String dowloadURL = await ref.getDownloadURL();
+
     return dowloadURL;
   }
 
