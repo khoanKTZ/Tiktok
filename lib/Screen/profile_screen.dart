@@ -107,7 +107,7 @@ class _ProFilePageState extends State<ProFilePage>
                             Text(
                               "Following",
                               style:
-                              TextStyle(color: Colors.grey, fontSize: 15),
+                              TextStyle(color: Colors.grey, fontSize: 13),
                             )
                           ],
                         ),
@@ -131,7 +131,7 @@ class _ProFilePageState extends State<ProFilePage>
                             Text("Follower",
                                 style: TextStyle(
                                   color: Colors.grey,
-                                  fontSize: 15,
+                                  fontSize: 13,
                                 ))
                           ],
                         ),
@@ -156,7 +156,7 @@ class _ProFilePageState extends State<ProFilePage>
                               "Like",
                               style: TextStyle(
                                   color: Colors.grey.withOpacity(0.8),
-                                  fontSize: 15),
+                                  fontSize: 13),
                             )
                           ],
                         ),

@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:tiktok_clone/Screen/login_screen.dart';
 import 'package:tiktok_clone/Screen/tabhomes/ForyouScene.dart';
+import 'package:tiktok_clone/Screen/tabprofiles/editprofilepages/Editprofileitem.dart';
 import 'package:tiktok_clone/check_Connection_firebase/save_video.dart';
 import 'package:tiktok_clone/check_Connection_firebase/utils.dart';
 import 'package:video_player/video_player.dart';
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
       //home: LoginScreen(),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
       // home: CheckServer(),
-      home: const HomeScreen(),
+      home: HomeScreen(),
     );
   }
 }
