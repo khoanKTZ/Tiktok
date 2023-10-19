@@ -3,20 +3,21 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:tiktok_clone/Database/auth_database.dart';
+import 'package:tiktok_clone/Screen/HomePage.dart';
 import 'package:tiktok_clone/Screen/camvideo_screen.dart';
 import 'package:tiktok_clone/Screen/chat_screen.dart';
+import 'package:tiktok_clone/Screen/profile_screen.dart';
 
 const pages = [
-  Text('Home Screen'),
+  HomePage(),
   ChatScreen(),
   CamScreen(),
   Text('Mail Screen'),
-  Text('Profile Screen'),
+  ProFilePage(),
 ];
 const backgroundColor = Colors.black;
 
 var buttonColor = Colors.red[400];
-
 
 const borderColor = Colors.grey;
 var firebaseAuth = FirebaseAuth.instance;
