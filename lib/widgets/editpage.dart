@@ -8,12 +8,12 @@ import 'package:tiktok_clone/Screen/camvideo_screen.dart';
 import 'package:tiktok_clone/Screen/chat_screen.dart';
 import 'package:tiktok_clone/Screen/profile_screen.dart';
 
-const pages = [
+List pages = [
   HomePage(),
   ChatScreen(),
   CamScreen(),
   Text('Mail Screen'),
-  ProFilePage(),
+  ProFilePage(uid: authController.user.uid),
 ];
 const backgroundColor = Colors.black;
 
